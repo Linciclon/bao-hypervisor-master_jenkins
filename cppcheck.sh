@@ -12,4 +12,3 @@ then
 else
   echo "THERE IS NO FILES IN THIS DIR" 
 fi
-
