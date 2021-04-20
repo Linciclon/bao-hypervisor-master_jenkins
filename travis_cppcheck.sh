@@ -47,7 +47,7 @@ then
   cppcheck --error-exitcode=1 --dump *.c
   python /home/joao/cppcheck-donate-cpu-workfolder/cppcheck/addons/misra.py --rule-texts=./rules.txt *.c.dump
   cd $DIR_ARCH_ARM/inc/arch/
-  cppcheck --error-exitcode=1 *.c
+  #cppcheck --error-exitcode=1 *.c
 else
   echo "THERE IS NO FILES IN THIS DIR" 
 fi
