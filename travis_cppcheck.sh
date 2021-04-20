@@ -45,8 +45,7 @@ if [ ${#files[@]} -gt 0 ]
 then 
   echo "files:"
   cppcheck --error-exitcode=1 --dump *.c
-  python $BASEDIR/misra.py --rule-texts=./rules.txt *.c.dump
-  ls
+  python $BASEDIR/misra.py --rule-texts=$BASEDIR/rules.txt *.c.dump
   cd $DIR_ARCH_ARM/inc/arch/
   echo MISRA
   #cppcheck --error-exitcode=1 *.c
