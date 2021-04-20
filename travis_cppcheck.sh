@@ -51,248 +51,249 @@ then
 else
   echo "THERE IS NO FILES IN THIS DIR" 
 fi
-
-
-cd $DIR_ARCH_RISCV
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_ARCH_RISCV/inc/arch/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_CORE
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_CORE/inc/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_LIB
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_LIB/inc/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-
-################################# drivers of platforms
-
-cd $DIR_PLAT_DRIVERS/8250_uart/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_DRIVERS/8250_uart/inc/drivers/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_DRIVERS/nxp_uart/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_DRIVERS/nxp_uart/inc/drivers/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_DRIVERS/pl011_uart/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_DRIVERS/pl011_uart/inc/drivers/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_DRIVERS/sbi_uart/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_DRIVERS/sbi_uart/inc/drivers/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-
-cd $DIR_PLAT_DRIVERS/zynq_uart/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_DRIVERS/zynq_uart/inc/drivers/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-###########################################################
-
-cd $DIR_PLAT_HIKEY/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_HIKEY/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_IMX/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_IMX/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_QEMU_ARM64/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_QEMU_ARM64/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_QEMU_RISCV/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_QEMU_RISCV/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_QEMU_RISCV/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_QEMU_RISCV/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_RPI4/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_RPI4/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-
-cd $DIR_PLAT_TX2/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_TX2/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_ULTRA/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_ULTRA/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_ZCU102/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_ZCU102/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-cd $DIR_PLAT_ZCU104/
-shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
-files=($DIR *)
-if [ ${#files[@]} -gt 0 ]
-then 
-  echo "files:"
-  cppcheck --error-exitcode=1 *.c
-  cd $DIR_PLAT_ZCU104/inc/plat/
-  cppcheck --error-exitcode=1 *.c
-else
-  echo "THERE IS NO FILES IN THIS DIR" 
-fi
-
-
-
+#
+#
+#cd $DIR_ARCH_RISCV
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_ARCH_RISCV/inc/arch/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_CORE
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_CORE/inc/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_LIB
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_LIB/inc/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#
+################################## drivers of platforms
+#
+#cd $DIR_PLAT_DRIVERS/8250_uart/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_DRIVERS/8250_uart/inc/drivers/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_DRIVERS/nxp_uart/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_DRIVERS/nxp_uart/inc/drivers/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_DRIVERS/pl011_uart/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_DRIVERS/pl011_uart/inc/drivers/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_DRIVERS/sbi_uart/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_DRIVERS/sbi_uart/inc/drivers/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#
+#cd $DIR_PLAT_DRIVERS/zynq_uart/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_DRIVERS/zynq_uart/inc/drivers/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+############################################################
+#
+#cd $DIR_PLAT_HIKEY/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_HIKEY/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_IMX/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_IMX/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_QEMU_ARM64/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_QEMU_ARM64/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_QEMU_RISCV/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_QEMU_RISCV/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_QEMU_RISCV/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_QEMU_RISCV/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_RPI4/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_RPI4/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#
+#cd $DIR_PLAT_TX2/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_TX2/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_ULTRA/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_ULTRA/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_ZCU102/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_ZCU102/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#cd $DIR_PLAT_ZCU104/
+#shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
+#files=($DIR *)
+#if [ ${#files[@]} -gt 0 ]
+#then 
+#  echo "files:"
+#  cppcheck --error-exitcode=1 *.c
+#  cd $DIR_PLAT_ZCU104/inc/plat/
+#  cppcheck --error-exitcode=1 *.c
+#else
+#  echo "THERE IS NO FILES IN THIS DIR" 
+#fi
+#
+#
+#
+#
