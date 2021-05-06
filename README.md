@@ -1,6 +1,5 @@
 # Bao - a lightweight static partitioning hypervisor
 
-
 Introduction
 ------------
 
