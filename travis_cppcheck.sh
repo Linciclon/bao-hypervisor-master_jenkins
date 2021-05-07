@@ -54,7 +54,6 @@ else
   echo "THERE IS NO FILES IN THIS DIR" 
 fi
 
-
 cd $DIR_ARCH_RISCV
 shopt -s nullglob dotglob     # To CHECK IF THERE IS ANY FILE IN ARCH/ARM DIR
 files=($DIR *)
