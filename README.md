@@ -4,8 +4,6 @@ Introduction
 ------------
 
 !!!ERROOO AQUIIIIIII!!!!
-!!!ERROOO AQUIIIIIII!!!!
-
 
 !!!ERROO
 !!!ERROOO AQUIIIIIII!!
