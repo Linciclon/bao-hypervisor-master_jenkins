@@ -4,7 +4,7 @@ Introduction
 ------------
 
 !!!ERROOO AQUIIIIIII!!!!
-!!!ERROOO AQUIIIIIII!!LLKLLOL
+!!!ERROOO AQUIIIIII
 
 
 **Bao** (from Mandarin Chinese “bǎohù”, meaning “to protect”) is a lightweight, 
